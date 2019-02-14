@@ -4,7 +4,5 @@ function onLoad() {
   //     alert('click.');
   //   });
 
-  marker.addEventListener('animationcomplete', evt => {
-    alert('animationcomplete');
-  });
+  marker.addEventListener('animationcomplete', evt => {});
 }
