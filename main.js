@@ -12,7 +12,9 @@ function onLoad() {
   );
 
   const targetElements = [];
-  const targetIds = ['id-box-1', 'id-box-2'];
+  const targetIds = [];
+  targetIds.push('id-box-1');
+  targetIds.push('id-box-2');
   targetElements.push(document.getElementById('id-box-1'));
   targetElements.push(document.getElementById('id-box-2'));
 
