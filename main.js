@@ -30,7 +30,7 @@ function onLoad() {
         return;
       }
       
-      targetIds.splice(targetIndex, 1);
+      targetIds.splice(targetIndex - 1, 1);
 
       if (targetIds.length == 0) {
         location.href = 'http://mashandroom.org';
