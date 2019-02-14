@@ -20,7 +20,8 @@ function onLoad() {
 
   targetElements.forEach(e => {
     e.addEventListener('click', evt => {
-      const index = targetIds.findIndex(evt.currentTarget.getAttribute("id"));
+      const id = evt.currentTarget.getAttribute("id");
+      const index = targetIds.findIndex(id);
       if (index != -1) {
         targetIds.splice(index, 1);
       }
