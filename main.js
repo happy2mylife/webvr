@@ -17,15 +17,20 @@ function onLoad() {
   targetIds.push('id-box-2');
   targetElements.push(document.getElementById('id-box-1'));
   targetElements.push(document.getElementById('id-box-2'));
-  const _self = this;
 
   targetElements.forEach(e => {
     e.addEventListener('click', evt => {
       const id = evt.currentTarget.getAttribute("id");
-      const index = _self.targetIds.findIndex(id);
-      if (index != -1) {
-        targetIds.splice(index, 1);
+      let targetIndex;
+      const filtered = targetIds.filter((targetId, index) => {
+        targetIndex = index;
+        return targetId == id;
+      });
+      if (!filtered.length) {
+        return;
       }
+      
+      targetIds.splice(targetIndex, 1);
 
       if (targetIds.length == 0) {
         location.href = 'http://mashandroom.org';
