@@ -20,7 +20,7 @@ function onLoad() {
     e.addEventListener('click', evt => {
       const index = targetIds.findIndex(id => evt.currentTarget);
       if (index != -1) {
-        targetIds.splice(0, index);
+        targetIds.splice(index, 1);
       }
 
       if (targetIds.length == 0) {
