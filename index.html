@@ -9,6 +9,9 @@
 <body onload="onLoad()">
 
   <a-scene>
+      <a-asset-item id="igari-obj" src="igari.obj"></a-asset-item>
+      <a-asset-item id="igari-mtl" src="igari.mtl"></a-asset-item>
+
     <a-camera position="0 0 0" look-controls>
       <a-entity id="id-cursor" cursor="fuse: true; fuseTimeout: 1000"
         position="0 0 -1" 
@@ -25,6 +28,8 @@
       animation="property: scale; startEvents: click; to: 2 2 2; easing: easeInSine; dur: 500"
       animation__2="property: scale; startEvents: mouseleave; to: 1 1 1; easing: easeInSine; delay: 500">
     </a-sphere>
+    
+    <a-obj-model position="0 0 0" src="#igari-obj" mtl="#igari-obj" animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; easing: linear"></a-obj-model>
 
     <a-sphere position="0 6 -7" color="skyblue" id="link-obj"></a-sphere>
 
