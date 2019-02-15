@@ -12,6 +12,7 @@
     <a-assets>
       <a-asset-item id="igari-obj" src="car.obj"></a-asset-item>
       <a-asset-item id="igari-mtl" src="car.mtl"></a-asset-item>
+      <img id="igariImage" src="./igari.png">
     </a-assets>
     <a-camera position="0 0 0" look-controls>
       <a-entity id="id-cursor" cursor="fuse: true; fuseTimeout: 1000"
@@ -35,10 +36,10 @@
     <a-sphere position="5 2 -7" color="red" animation="property: visible; startEvents: click; dur: 5000; to: false; loop: true">
     </a-sphere>
 
-    <a-box id="id-box-1" position="5 -3 -7" color="skyblue" animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; easing: linear">
+    <a-box id="id-box-1" src="#igariImage" position="5 -3 -7" color="skyblue" animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; easing: linear">
     </a-box>
 
-    <a-box id="id-box-2" position="-5 -3 -7" color="skyblue" animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; easing: linear">
+    <a-box id="id-box-2" src="./igari.png" position="-5 -3 -7" color="skyblue" animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; easing: linear">
     </a-box>
     
     <a-entity laser-controls="hand: right" oculus-touch-controls="hand:right; armModel:true;">
