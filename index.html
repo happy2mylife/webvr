@@ -28,7 +28,7 @@
     </a-camera>
 
     <a-image src="#hakuho" position="-8 2 -7" width="1" height="1"
-    animation="property: scale; startEvents: click; to: 2 2 2; easing: easeInSine; dur: 500"
+      animation="property: scale; startEvents: click; to: 2 2 2; easing: easeInSine; dur: 500"
       animation__2="property: scale; startEvents: mouseleave; to: 1 1 1; easing: easeInSine; delay: 500"></a-image>
 
 
@@ -45,7 +45,9 @@
     <a-box id="id-box-1" src="#igariImage" position="5 -3 -7" color="skyblue" animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 3000; loop: true; easing: linear">
     </a-box>
 
-    <a-box id="id-box-2" src="#hakuho" position="-5 -3 -7">
+    <a-box id="id-box-2" src="#hakuho" position="-5 -3 -7"
+                 animation="property: scale; startEvents: click; to: 4 4 4; easing: easeInSine; dur: 500"
+      animation__2="property: scale; startEvents: mouseleave; to: 1 1 1; easing: easeInSine; delay: 500">
     </a-box>
     
     <a-entity laser-controls="hand: right" oculus-touch-controls="hand:right; armModel:true;">
