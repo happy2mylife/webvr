@@ -13,6 +13,7 @@
       <a-asset-item id="igari-obj" src="car.obj"></a-asset-item>
       <a-asset-item id="igari-mtl" src="car.mtl"></a-asset-item>
       <img id="igariImage" src="./igari.png">
+      <img id="hakuho" src="./sumo/20002320.jpg">
     </a-assets>
     <a-camera position="0 0 0" look-controls>
       <a-entity id="id-cursor" cursor="fuse: true; fuseTimeout: 1000"
@@ -25,6 +26,11 @@
               
       </a-entity>
     </a-camera>
+
+    <a-image src="#hakuho"
+    animation="property: scale; startEvents: click; to: 2 2 2; easing: easeInSine; dur: 500"
+      animation__2="property: scale; startEvents: mouseleave; to: 1 1 1; easing: easeInSine; delay: 500"></a-image>
+
 
     <a-sphere position="-5 2 -7" color="#EF2D5E"
       animation="property: scale; startEvents: click; to: 2 2 2; easing: easeInSine; dur: 500"
