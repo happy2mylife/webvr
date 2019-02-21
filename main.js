@@ -18,6 +18,9 @@ function onLoad() {
   targetElements.push(document.getElementById('id-box-1'));
   targetElements.push(document.getElementById('id-box-2'));
 
+  document.getElementById('id-box-2').addEventListener('animationend', () => {});
+  /*
+  ブロックを２個clickしたらリンク移動
   targetElements.forEach(e => {
     e.addEventListener('click', evt => {
       const id = evt.currentTarget.getAttribute("id");
@@ -37,4 +40,5 @@ function onLoad() {
       }
     });
   });
+*/
 }
