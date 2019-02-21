@@ -20,7 +20,9 @@ function onLoad() {
 
   document.getElementById('id-box-2').addEventListener('animationend', () => {});
   document.getElementById('a-video-1').addEventListener('click', evt => {
-    document.getElementById('sample-video').play();
+    setTimeout(function(){
+      document.getElementById('sample-video').play();
+    },0);
   });
   /*
   ブロックを２個clickしたらリンク移動
