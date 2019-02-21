@@ -19,7 +19,7 @@ function onLoad() {
   targetElements.push(document.getElementById('id-box-2'));
 
   document.getElementById('id-box-2').addEventListener('animationend', () => {});
-  document.getElementById('sample-video').addEventListener('click', evt => {
+  document.getElementById('a-video-1').addEventListener('click', evt => {
     document.getElementById('sample-video').paly();
   });
   /*
